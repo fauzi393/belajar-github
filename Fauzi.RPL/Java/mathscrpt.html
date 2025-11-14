@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>  
+<script>
+    function n() {
+      let num = document.getElementById('angka').value;
+      document.write("hasil abs = " + Math.abs(num));
+      document.write("<br> hasil ceil = " + Math.ceil(num));
+      document.write("<br> hasil floor = " + Math.floor(num));
+      document.write("<br> hasil round = " + Math.round(num));
+      document.write("<br> hasil trunch = " + Math.trunc(num));
+    }
+  </script>
+<body>
+  <form action="">
+  <label for="">Masukan Angka</label><br>
+  <input type="number" id="angka"><br><br>
+  <button onclick="n()">Submit</button>
+  </form>
+</body>
+</html>

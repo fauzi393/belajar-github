@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulasi Data Array</title>
+  <script>
+    var nam = ["aku", "saya", "dia", "kamu"];
+    function tampilkanArray() {
+      alert(nam.join(", "));
+      console.log(nam);
+    }
+    function tambahDepan() {
+      alert("isi awal:" + nam.join(", "));
+      var input = prompt("Masukkan data untuk di depan");
+      nam.unshift(input);
+      tampilkanArray();
+    }
+    function tambahBelakang() {
+      alert("isi awal:" + nam.join(", "));
+      var input = prompt("Masukkan data di belakang");
+      nam.push(input);
+      tampilkanArray();
+    }
+    function hapusDepan() {
+      alert("isi awal:" + nam.join(", "));
+      nam.shift();
+      tampilkanArray();
+    }
+    function hapusBelakang() {
+      alert("isi awal:" + nam.join(", "));
+      nam.pop();
+      tampilkanArray();
+    }
+  </script>
+</head>
+<body>
+  <button onclick="tambahDepan()">Tambah Depan</button>
+  <button onclick="tambahBelakang()">Tambah Belakang</button>
+  <button onclick="hapusDepan()">Hapus Depan</button>
+  <button onclick="hapusBelakang()">Hapus Belakang</button>
+</body>
+</html>

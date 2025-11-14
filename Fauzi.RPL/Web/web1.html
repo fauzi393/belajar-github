@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Sederhana</title>
+  <style>
+    :root {
+        --a: rgb(26, 148, 148);
+        --b: rgb(4, 42, 122);
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--a);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .card {
+      background: var(--b);
+      width: 350px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px #d408b91a;
+      text-align: center;
+    }
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .card h2 {
+      margin: 0;
+      color: var(--a);
+    }
+    .card p {
+      color: var(--a);
+      margin: 5px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #005dc1;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #005dc1;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="https://i.pinimg.com/736x/a3/66/20/a366203b69649fa9295660aefa7394b4.jpg" alt="Foto ">
+    <h2>Fuyuki (冬樹)</h2>
+    <p><b>Umur:</b> 17 tahun</p>
+    <p><b>Hobi:</b> Main game, Gambar</p>
+    <p><b>Cita-cita:</b> Web devoloper</p>
+    <p><b>Makanan favorit:</b> chiken</p><br>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse commodi neque reiciendis atque at dolores odit. Dicta sapiente veniam, officia maiores nulla tenetur sunt sint autem quo earum. Tempore, repellat?</p>
+    <a href="" class="btn">Hubungi Saya</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    background-color: grey;
+  }
+  .fr {
+    height: 200px;
+    width: 200px;
+    background-color: cyan;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px blue;
+    text-align: center;
+    color: black;
+    margin: auto;
+    margin-top: 100px;
+  }
+</style>
+<body>
+  <form class="fr">
+  <label><b>Buat Nickname :</b></label><br><br>
+  <input type="text" name="pp"><br><br>
+  <input type="submit" onclick="a()">
+  </form>
+  <script>
+    function a() {
+    var ap = document.getElementsByName("pp")[0].value;
+    alert("Selamat Datang " + ap);
+    alert("DAFTAR SUKSES");
+    }
+  </script>
+</body>
+</html>
